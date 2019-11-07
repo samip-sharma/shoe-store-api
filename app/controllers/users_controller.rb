@@ -14,6 +14,11 @@ class UsersController < ApplicationController
         byebug
     end
 
+    def update
+        user=User.find(params[:id])
+        byebug
+    end
+
     def getToken
         user = User.find_by(email: params[:email])
         if user && user.authenticate(params[:password])
