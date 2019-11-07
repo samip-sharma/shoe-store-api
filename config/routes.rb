@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_shoes
   resources :shoe_sizes
   resources :shoes
   resources :users
