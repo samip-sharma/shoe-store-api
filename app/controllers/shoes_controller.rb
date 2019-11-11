@@ -6,6 +6,10 @@ class ShoesController < ApplicationController
         byebug
     end
 
+    def index
+        render json: Shoe.all
+    end
+
 
     private 
 
